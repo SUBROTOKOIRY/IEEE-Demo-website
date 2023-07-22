@@ -1,0 +1,17 @@
+::-webkit-scrollbar{
+    display: none;
+}
+html{ 
+    background: #000608; 
+}
+
+body{
+    margin: 0;
+    color: aliceblue;
+}
+
+.board{
+    position: relative; 
+    height:700px; 
+    width:100%;
+}

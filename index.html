@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>    
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/chip.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/draw.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/pastevents.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/milestonecard.css">
+    <link rel="stylesheet" href="./css/standsection.css">
+    <link rel="stylesheet" href="./css/pastevent.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="./js/utils.js"></script> -->
+</head>
+
+<!-- Customized scrollbar on whole page view -->
+<body>
+<div class="navbar">
+        <a href="./index.html" class="logo"><img src="./photo/logo.png" alt="logo" id="logo_img"></a>
+
+        <a class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <ul class="navbar-dropdown">
+            <li>
+                <a href="./boards.html" class="navbar-links">BOARDS</a>
+                <div class="dropdown">
+                    <a href="./boards.html#web_id"><img src="./photo/web-dev.png" alt=""><span>WEB-DEVELOPMENT BOARD</span> </a>
+                    <a href="./boards.html#ed_id"><img src="./photo/pen.png" alt=""> EDITORIAL BOARD</a>
+                </div>
+            </li>
+            <li>
+                <a href="./societies.html" class="">SOCIETIES</a>
+                <div class="dropdown">
+                    <a href="./societies.html#std_id"><img src="./photo/student1.png" alt=""> STUDENT BRANCH</a>
+                    <a href="./societies.html#eds_id"><img src="./photo/electronic.png" alt=""> ELECTRON DEVICES SOCIETY</a>
+                    <a href="./societies.html#wie_id"><img src="./photo/woman.png" alt=""> WOMEN IN ENGINEERING</a>
+                    <a href="./societies.html#rds_id"><img src="./photo/robotics.png" alt=""> ROBOTICS AND AUTOMATION SOCIETY</a>
+                </div>
+            </li>
+            <li>
+                <a href="./team.html" class="navbar-links">TEAM</a>
+                <div class="dropdown">
+                    <a href="./team.html#execom"><img src="./photo/executive committee.png" alt=""> EXECUTIVE COMMITTEE</a>
+                    <a href="./team.html#mem_id"><img src="./photo/membership.png" alt=""> MEMBERSHIP COMMITTEE</a>
+                    <a href="./team.html#socities_id"><img src="./photo/society.png" alt=""> SOCIETY</a>
+                    <a href="./team.html#boards_id"><img src="./photo/board.png" alt=""> BOARDS</a>
+                </div>
+            </li>
+            <!-- <li>
+                <a class="navbar-links">FESTS</a>
+                <div class="dropdown">
+                    <a href="http://www.ieeesjce.com/cyberia/home.php"><img src="cyberia.png" alt=""> CYBERIA</a>
+                  <a href="http://ieeesjce.com/tuxedo/"><img src="toxido.png" alt=""> TUXEDO</a>
+                </div>
+            </li> -->
+            <li>
+                <a href="./gallery.html" class="navbar-links">GALLERY</a>
+            </li>
+            <li>
+                <a href="./contact_us.html" class="navbar-links">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+<div class="board">
+    <!-- Block1 is designed based on circuit board and combinated animations of lines, circles, and polygons -->
+    <div id="chipMain" class="chip chip-container">
+        <h1 style="font-size: 2.2rem;">Welcome to <br><span style=" font-size: 3rem;"> IEEE-SJCE</span> </h1>
+        
+    </div>
+    <svg id="svg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet"></svg>
+    <svg id="svg1after" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        preserveAspectRatio="xMidYMid meet"></svg>
+    <canvas id="canvas1"></canvas>
+</div>
+<div class="introduction" id="introduction_part">
+        <div class="heading">
+            <h2>Experience the joy of learning with IEEE-SJCE!</h2>
+        </div>
+        <div class="second-heading">
+            <h2>IMAGINE ! - INNOVATE ! - INSPIRE !</h2>
+        </div>
+        <div class="paragraph">
+            <p>IEEE-SJCE conducts many events regularly for students to gain knowledge and encourages them to take
+                active part in all of them.</p>
+        </div>
+
+</div>
+
+    <!-- EVENTS -->
+     <div class="event" id="event_part">
+        <h1>Events</h1>
+        <hr class="hr-1">
+    </div>
+    <divphoto class="new_event">
+        <img src="./photo/iot.png" alt="">
+        <div class="inside_box">
+            <h1> IoT WORKSHOP</h1>
+            <p>Greetings from IEEE-SJCE!
+                <br/>
+                IEEE-SJCE RAS is back with their most awaited premier technical event,
+                A 3 day workshop that gives a hands-on training session and focuses on sensors, microcontrollers, protocols, cloud platforms and captivating projects.
+                <br/>
+                Let's kick the session off by embarking on this journey from the scratch, where we explore the magic of Raspberry Pi and Pico W (a new powerful chip) using micropython.
+                <br/>
+                <br/>
+                Registration fee (per team of 3):
+                <br/>
+                IEEE members with RAS - Rs. 150/-
+                <br/>
+                IEEE members without RAS - Rs. 300/-
+                <br/>
+                Non-IEEE members - Rs. 600/-
+                <br/>
+                <br/>
+                Kit price: Rs. 1100/-
+                <br/>
+                One kit mandatory per team. Kit includes latest Raspberry Pi Pico W.
+                <br/>
+                <br/>
+                Date: 28th, 29th & 30th April   
+                <br/>
+                Venue: IS Seminar Hall - 1
+                <br/>
+                <br/>
+                Limited seats only.
+                <br/>
+                <br/>
+                For further details, contact
+                <br/>           
+                Gururaj: +91 6361205183
+                <br/>
+                Darshan: +91 7892202663
+                <br/>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScSFyOO_yOdaFdMRK-tZPvCSG840KwLKrbp-Udne40t3iuSTQ/viewform?usp=send_form">
+                    <button class="btn1">Register</button>
+                </a>                
+            </p>
+        </div>
+    </divphoto>
+
+    <div class="new_event" id="new_event_2">
+        
+        <div class="inside_box">
+            <h1>SOLDERING AND ETCHING WORKSHOP </h1>
+            <p>Greetings from IEEE-SJCE!
+                <br/>
+                Electronic appliances play a significant role in our daily lives. Are you aware of the PCBs in it? Ever wondered about how it's designed and etched? Well! We have something in store for you.
+                <br/>
+                The EDS chapter of IEEE-SJCE brings forth the most awaited event of this semester,
+                <br/>
+                It's a three-day workshop where you will be learning how to solder and design your own etched circuit boards from scratch.
+                <br/>
+                It's a fundamental skill needed for an engineer, that will be utilized irrespective of the different domains in engineering.        
+                <br/>
+                <br/>
+                Date: 20th, 21st and 22nd January 2023   
+                <br/>
+                <br/>
+                Registration Fees (Team of two):
+                <br/>
+                IEEE Members + EDS: Rs. 150/-
+                <br/>
+                IEEE Members without EDS: Rs. 300/-
+                <br/>
+                Non-IEEE Members: Rs. 500/- 
+                <br/>
+                <br/>
+                Price of component kit: Rs. 650/-
+                <br/>
+                Note: One kit is compulsory for every team.
+                
+                <br/>
+                <br/>
+                Limited seats only.
+                <br/>
+                <br/>
+                For further details, contact
+                <br/>
+                Abdullah:8861402929
+                <br/>
+                Ashwin:9513908310
+                <br/>
+                <a href="https://bit.ly/soldering_and_etching">
+                    <button class="btn1">Register</button>
+                </a>                
+            </p>
+        </div>
+        <img src="./photo/soldering.jpeg" alt="" id="image2">
+    </div>
+
+    <!-- Past-Events -->
+     <div class="event" id="event_part">
+        <h1>Past Events</h1>
+        <hr class="hr-1">
+</div>
+<div class="paragraph">
+    <p>Some of IEEEs glorious past events</p>
+</div>
+    <div class="past-events">
+        <!-- <section class="page-section" id="about"> -->
+        <div class="pasteventcontainer">
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="./photo/tl4.jpeg" alt="..."></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Jun 2022</h4>
+                            <h4 class="subheading" style="color: rgb(194, 211, 227);">ROBOTICS'13</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">The workshop included basics of  microcontrollers, microprocessors,blinking onboard LED, blinking external LED, PWM(breathing LED), pull up and pull down concepts and interrupts all of these concepts were then implemented in building the robots.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="./photo/tl3.jpeg" alt="..."></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 style="color: rgb(194, 211, 227);">April 2022</h4>
+                            <h4 class="subheading">IOT Workshop</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">A 3-day workshop with a lot of learning and interesting hands-on sessions.We will be covering protocols and all the other important theories, before moving onto the more exciting part of simulating them using Raspberry Pi and Node MC.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="./photo/tl2.jpeg" alt="..."></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 style="color: rgb(194, 211, 227);">July 2022</h4>
+                            <h4 class="subheading">PRAYAS</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">PRAYAS is an outreach program by IEEE-SJCE WIE that provides inequitable education outcomes to underprivileged children. The volunteers visited an Orphanage every week to interact with the students and help them out in their academic activities</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="./photo/tl1.jpeg" alt="..."></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">Soldering and Etching Workshop</h4>
+                            <h4 style="color: rgb(194, 211, 227);">December 2021</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">The Electron Devices Society brings forth yet another one-of-a kind
+                                event, SOLDERING AND ETCHING WORKSHOP a 3-day Workshop that gives you a hands-on
+                                experience of Soldering and Etching with theoretical and practical sessions.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Be Part
+                            <br>
+                            Of Our
+                            <br>
+                            Story!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    <!-- </section> -->
+
+    </div>
+<!-- Glimpses -->
+<div class="event" id="event_part">
+        <h1>Glimpses</h1>
+        <hr class="hr-1">
+    </div>
+<div class="swiper-container">
+     <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <!-- <div class="swiper-slide"><img src="./photo/sl1.jfif" alt=""></div> -->
+    <div class="swiper-slide"><img src="./photo/sl2.jpeg" alt=""></div>
+    <div class="swiper-slide"><img src="./photo/sl3.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="./photo/sl4.jpeg" alt=""></div>
+    <div class="swiper-slide"><img src="./photo/tl1.jpeg" alt=""></div>
+    <div class="swiper-slide"><img src="./photo/tl2.jpeg" alt=""></div>
+    <div class="swiper-slide"><img src="./photo/tl3.jpeg" alt=""></div>
+    <div class="swiper-slide"><img src="./photo/tl4.jpeg" alt=""></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+
+</div>
+
+</div>
+
+<!-- Milestones -->
+<div class="event" id="event_part">
+        <h1>Milestones Events</h1>
+        <hr class="hr-1">
+</div>
+  <div class ="container">
+    <div class = card>
+      <div class = image>
+        <img href = "#" src="./photo/latex_workshop.jpeg" alt="">
+      </div>
+      <div class = content>
+        <h3>Latex Workshop</h3>
+        <p>LaTeX is a typesetting software used to generate professional-looking documents..</p>
+      </div>
+    </div>    
+    <div class = card>
+      <div class = image>
+        <img href = "#" src="./photo/bug_bounty.jpeg" alt="">
+      </div>
+      <div class = content>
+        <h3>Bug Bounty</h3>
+        <p>IEEE-SJCE is delighted to welcome you all to BUG BOUNTY - An online treasure hunt!</p>
+      </div>
+    </div>   
+      <div class = card>
+      <div class = image>
+        <img href = "#" src="./photo/QUIZBIZZ.jpeg" alt="">
+      </div>
+      <div class = content>
+        <h3>Quiz-Bizz</h3>
+        <p>QUIZBIZZ is an event for people of all branches to test their skills and knowledge in various fields..</p>   
+    </div>
+    </div>  <div class = card>
+      <div class = image>
+        <img href = "#" src="./photo/robotics_13.jpeg" alt="">
+      </div>
+      <div class = content>
+        <h3>Robotics 13</h3>
+        <p>Technology has always made life simple and robots have changed the course of our lives in unimaginable ways.</p>
+    </div>
+    </div>  <div class = card>
+      <div class = image>
+        <img href = "#" src="./photo/iot.jpg" alt="">
+      </div>
+      <div class = content>
+        <h3>IoT Workshop</h3>
+        <p>This cool, futuristic seeming sorcery is what we formally call IoT aka Internet of Things..</p>
+      </div>
+    </div>  <div class = card>
+      <div class = image>
+        <img href = "#" src="./photo/pc.jpg" alt="">
+      </div>
+      <div class = content>
+        <h3>PC Assembly</h3>
+        <p>Building a computer is fun, affordable and empowering. It's fun being able to choose all of the parts..
+</p>
+    </div>
+    </div>  <div class = card>
+      <div class = image>
+        <img href = "#" src="./photo/soldering.jpeg" alt="">
+      </div>
+      <div class = content>
+        <h3>Soldering Workshop</h3>
+        <p>How is your relation-chip with electronics? Not great? Fret not! We're here to build a strong one from scratch..</p>
+      </div>
+    </div>  <div class = card>
+      <div class = image>
+        <img href = "#" src="./photo/sql.jpg" alt="">
+      </div>
+      <div class = content>
+        <h3>SQL Bootcamp</h3>
+        <p>How do you fetch the second highest salary in the given database? Or, even simpler..</p>
+    </div>
+    </div> 
+  </div>
+ 
+  <div class="event" id="event_part">
+        <h1>What we Stand for</h1>
+        <hr class="hr-1">
+</div>
+<div class="paragraph">
+    <p>IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity. IEEE SJCE and its members inspire a global community through its highly cited workshops, seminars, professional and educational activities.</p>
+</div>
+
+<!-- Standsection -->
+<div class="standsection">
+     <section class="card-area">
+
+            <!-- Card: City -->
+            <section class="card-section">
+                <div class="card">
+                    <div class="flip-card">
+                        <div class="flip-card__container">
+                            <div class="card-front">
+                                <div class="card-front__tp card-front__tp--city">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                               <g>
+                                   <path d="M49.7,22c-1.1,0-2,0.9-2,2v32.2c0,1.1,0.9,2,2,2s2-0.9,2-2V24C51.7,22.9,50.8,22,49.7,22z"/>
+                                   <path d="M13,29.5c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3h20.8c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3h20.8c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7
+                                       V7.1h24.8v15.3c0,1.1,0.9,2,2,2s2-0.9,2-2V5.1c0-1.1-0.9-2-2-2H3.7c-1.1,0-2,0.9-2,2v51c0,1.1,0.9,2,2,2s2-0.9,2-2V36.5H13
+                                       c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3H13z"/>
+                                   <path d="M58,11.9c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1-0.1-0.2c0-0.1,0-0.1-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c0,0,0,0,0,0
+                                       c0-0.1-0.1-0.1-0.1-0.2c0,0-0.1-0.1-0.1-0.1c0,0-0.1-0.1-0.1-0.1c-0.1,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1
+                                       c-0.1,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.2,0c0,0,0,0,0,0
+                                       c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.2,0c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0.1c-0.1,0-0.1,0.1-0.2,0.1c0,0-0.1,0-0.1,0.1l-12.6,7.8
+                                       c0,0,0,0,0,0c-0.1,0-0.1,0.1-0.2,0.1c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.2c0,0.1-0.1,0.1-0.1,0.2
+                                       c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0v5.4H22.1
+                                       c-1.1,0-2,0.9-2,2v28.9c0,1.1,0.9,2,2,2s2-0.9,2-2V29.3h17.3v26.9c0,1.1,0.9,2,2,2s2-0.9,2-2V21l8.6-5.3v40.5c0,1.1,0.9,2,2,2
+                                       s2-0.9,2-2V12.1C58,12,58,12,58,11.9z"/>
+                                   <path d="M28,31L28,31c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S29.1,31,28,31z"/>
+                                   <path d="M33.5,31L33.5,31c-1.1,0-2,0.9-2,2s0.9,2,2,2c1.1,0,2-0.9,2-2S34.6,31,33.5,31z"/>
+                                   <path d="M28,36L28,36c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S29.1,36,28,36z"/>
+                                   <path d="M33.5,36L33.5,36c-1.1,0-2,0.9-2,2s0.9,2,2,2c1.1,0,2-0.9,2-2S34.6,36,33.5,36z"/>
+                               </g>
+                               </svg>
+
+                               <h2 class="card-front__heading">
+                                City break
+                            </h2>
+                            <p class="card-front__text-price">
+                                From £29
+                            </p>
+                                </div>
+
+                                <div class="card-front__bt">
+                                    <p class="card-front__text-view card-front__text-view--city">
+                                        View me
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <video class="video__container" autoplay muted loop>
+                                    <source class="video__media" src="https://player.vimeo.com/external/370331493.sd.mp4?s=e90dcaba73c19e0e36f03406b47bbd6992dd6c1c&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inside-page">
+                        <div class="inside-page__container">
+                            <h3 class="inside-page__heading inside-page__heading--city">
+                                For urban lovers
+                            </h3>
+                            <p class="inside-page__text">
+                               As cities never sleep, there are always something going on, no matter what time!
+                            </p>
+                            <!-- <a href="#" class="inside-page__btn inside-page__btn--city">View deals</a> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+</div>
+<!-- <script src="./js/path.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script type="module" src="./js/board.js"></script>
+<script type="module" src="./js/navbar.js"></script>
+<script type="module" src="./js/swiper.js"></script>
+
+</body>
+</html>
